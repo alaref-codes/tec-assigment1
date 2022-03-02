@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    direction: rtl;
 }
 
 header {
@@ -8,10 +9,13 @@ header {
     padding: 125px;
     background-color: #5bd0f4a1;
     text-align: center;
-    font-size: 55px;
+    font-size: 3em;
     font-family: monospace;
-    border-bottom:1px solid black; 
-    border-bottom-color: black;
+}
+
+#headline {
+    /* font-family: 'Tajawal', sans-serif ; */
+    font-family: 'Kufam', sans-serif;
 }
 
 .course {
@@ -21,45 +25,46 @@ header {
     text-align: right;
     font-size: 35px;
     font-family: monospace;
-    border-bottom:1px solid black; 
-    border-bottom-color: black;
 }
-
 
 .home {
     left: 140px;
     position: absolute;
     top: 15px;
-    border-bottom-style: groove;
-    border-bottom-style:ridge;
-    border-bottom-width: thin;
     font-size: 30px;
     color: black;
 }
 
 #hom {
-    left: 140px;
+    left: 120px;
+    margin-right: 20px;
     position: absolute;
     top: 15px;
-    border-bottom-style: groove;
-    border-bottom-style:ridge;
-    border-bottom-width: thin;
     font-size: 20px;
-    color: black;
-    
+    color: #aef8fd;
+    background-color: rgb(35, 105, 114);
+    padding: 8px;
+    border-radius: 4px;   
 }
 
 #about {
     left: 220px;
     position: absolute;
     top: 15px;
-    border-bottom-style:ridge;
-    border-bottom-width: thin;
-    border-bottom-color: darkslateblue;
     font-size: 20px;
+    color: #aef8fd;
+    background-color: rgb(35, 105, 114);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#about:hover{
     color: black;
 }
 
+#hom:hover{
+    color: black;
+}
 
 #author {
     position: absolute;
@@ -75,9 +80,11 @@ header {
     font-family: monospace;
 }
 
+
 .modify {
     clear: both;
 }
+
 .era {
     width: 50%;
     position: absolute;
@@ -156,6 +163,18 @@ input[type=submit] {
     margin-left: 15px;
 }
 
+#box {
+    margin: 10%;
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+  
+#box:hover {
+    width: 300px;
+}
+
 footer {
     background-color: #5bd0f4a1;
     text-align: center;
@@ -168,4 +187,24 @@ footer {
 
 .link {
     border-bottom: 1px ridge black;
+}
+
+.class {
+    font-family: 'Kufam', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+.container > div {
+    background-color: #9e1616;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 1.6em;
 }
