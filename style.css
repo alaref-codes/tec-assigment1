@@ -9,12 +9,12 @@ header {
     padding: 125px;
     background-color: #5bd0f4a1;
     text-align: center;
+    text-indent: 0%;
     font-size: 3em;
     font-family: monospace;
 }
 
 #headline {
-    /* font-family: 'Tajawal', sans-serif ; */
     font-family: 'Kufam', sans-serif;
 }
 
@@ -164,7 +164,7 @@ input[type=submit] {
 }
 
 #box {
-    margin: 10%;
+    margin: 3%;
     width: 100px;
     height: 100px;
     background: red;
@@ -193,18 +193,72 @@ footer {
     font-family: 'Kufam', sans-serif;
 }
 
+#courses {
+    display: inline;
+    margin: 50% 30%;
+    line-height: 2em;  
+    color: rgb(88, 88, 88);
+    font-family: 'Kufam' , sans-serif;
+    font-size: 2em;
+}
 
 .container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
   }
 
 .container > div {
-    background-color: #9e1616;
-    width: 350px;
-    height: 300px;
+    width: 25%;
+    height: 330px;
     margin: 20px;
     text-align: center;
     line-height: 75px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px grey ;
     font-size: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#html {
+    background-color: #ca5959;
+}
+
+#css {
+    background-color: #a9f5ff;
+
+}
+
+#javascript{
+    background-color: #fffd8b;
+}
+
+@media screen and (max-width: 1150px) {
+    #into {
+        position: absolute;
+        top: 250px;
+        right: 50%;
+        font-size: 20px;
+        font-family: monospace;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container > div {
+        width: 80%;
+    }
+    #into {
+        visibility: hidden;
+    }
+
+    #headline {
+        font-size: 2em;
+    }
 }
